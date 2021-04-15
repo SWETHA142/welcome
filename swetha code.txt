@@ -1,0 +1,65 @@
+#include<stdio.h>
+
+#include<string.h>
+
+int main()
+
+{
+    
+	int in,n,len,i,j,k;
+   
+ 	char a[1000];
+    
+	scanf("%s",a);
+    
+	n=strlen(a);
+    
+	for(i=1;i<=n;i++)
+
+    	{
+        
+		len=(n+1)/2;
+        
+		printf("%c",a[len]);
+
+        	for(j=0;j<=n-i;j++)
+
+        	{
+
+           		 printf(" ");
+
+        	}
+
+            	for(k=0;k<=i;k++)
+    
+        	{
+                
+			if(k<=(n+1)/2)
+
+                	{
+
+                   		 printf("%c",a[len]);
+
+                    		 len++;
+
+                	}
+   
+             		else
+
+                	{
+
+                    		printf("%c",a[in]);
+
+                    		in++;
+                
+			}
+      
+      		}
+
+        }
+
+        printf("\n");
+
+        return 0;
+
+}
